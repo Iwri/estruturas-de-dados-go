@@ -1,4 +1,4 @@
-package main
+package search
 
 func BinarySearchRecursive(arr []int, target int, left int, right int) int {
 	if left > right {
@@ -13,10 +13,4 @@ func BinarySearchRecursive(arr []int, target int, left int, right int) int {
 	} else {
 		return BinarySearchRecursive(arr, target, left, mid-1)
 	}
-}
-
-// Teste
-func main() {
-	arr := []int{10, 20, 30, 40, 50}
-	println(BinarySearchRecursive(arr, 40, 0, len(arr)-1)) // 3
 }
